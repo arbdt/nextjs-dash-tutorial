@@ -32,6 +32,8 @@ export default function Page() {
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Image component to page here; h/w should match aspect of source image; hidden hides on mobile, md-block shows on desktop */}
           <Image src="/hero-desktop.png" width={1000} height={760} className='md:block hidden' alt="Screenshots of the dashboard project for dekstop and mobile"></Image>
+          {/* Add Image component for small screens;  block shows on mobile, md-hidden hides on desktop */}
+          <Image src="/hero-mobile.png" width={560} height={620} className='block md:hidden' alt="Screen shot sized for mobile"></Image>
         </div>
       </div>
     </main>
