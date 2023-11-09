@@ -2,7 +2,7 @@ import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import styles from '@/app/ui/home.module.css'; // import css module
 import { lusitana } from './ui/fonts'; // Import lusitana font
-
+import Image from 'next/image'; // import Nextjs Image component
 import Link from 'next/link';
 export default function Page() {
   return (
@@ -30,7 +30,8 @@ export default function Page() {
           </Link>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-          {/* Add Hero Images Here */}
+          {/* Add Image component to page here; h/w should match aspect of source image; hidden hides on mobile, md-block shows on desktop */}
+          <Image src="/hero-desktop.png" width={1000} height={760} className='md:block hidden' alt="Screenshots of the dashboard project for dekstop and mobile"></Image>
         </div>
       </div>
     </main>
